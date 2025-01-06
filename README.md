@@ -1,4 +1,4 @@
-﻿# Fully Transformer Network for Change Detection of Remote Sensing Images
+﻿# Fully Transformer Network for Change Detection of Remote Sensing Images 论文复现
 ****
 
 Paper Links: [Fully Transformer Network for Change Detection of Remote Sensing Images
