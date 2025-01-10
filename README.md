@@ -35,23 +35,12 @@ Paper Links: [Fully Transformer Network for Change Detection of Remote Sensing I
 
 ### 以WHU-CD数据集为例进行论文结果复现
 ****
-![8d114e2a7787fd707e250d19535e3a1](https://github.com/user-attachments/assets/23f7f1b2-d75f-484c-879e-94430938e394)
+实验结果如下图所示，左侧whu_swin.pth为训练好的模型参数,使用RTX3090训练耗时约10小时  
+                   下方控制台输出为实验结果
+![Snipaste_2025-01-10_11-03-44](https://github.com/user-attachments/assets/3375138a-c4e7-4a53-9458-d0f51a79b66d)
 
-- For training, run:
+![image](https://github.com/user-attachments/assets/1266444f-2c9f-4534-b441-178a254270cf)
 
-```bash
-python train_(name of the dataset).py
-```
+原论文实验结果如下，可以发现复现结果与原论文结果几乎一致
+![image](https://github.com/user-attachments/assets/84c51c21-70ce-44cb-bbbd-f436e6c25760)
 
-[//]: # (- If you want to use the SSIM and IOU loss function with CrossEntropy loss funtion together, you just need to remove comments in train.py &#40;below the CrossEntropy loss&#41; and add the loss operation in the loss calculation place.&#41;)
-[//]: # (- Especially, when you calculate the IOU loss, you need to convert the images &#40;convert 0->1, 1->0&#41;. Because the image pixels values are mostly 0, and it will influence the IOU loss calculation &#40;Based on IOU loss characteristic&#41;.)
-
-- For prediction, run:
-```bash
-python test_swin.py 
-```
-
-- For evaluation, run:
-```bash
-python deal_evaluation.py 
-```
