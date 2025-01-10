@@ -39,8 +39,7 @@ Paper Links: [Fully Transformer Network for Change Detection of Remote Sensing I
                    下方控制台输出为实验结果
 ![Snipaste_2025-01-10_11-03-44](https://github.com/user-attachments/assets/3375138a-c4e7-4a53-9458-d0f51a79b66d)
 
-![image](https://github.com/user-attachments/assets/1266444f-2c9f-4534-b441-178a254270cf)
-
 原论文实验结果如下，可以发现复现结果与原论文结果几乎一致
+其中pre值相差约0.01，rec值相差约0.01，F1值相差约0.005，IoU值相差约0.008，OA值相差约0.001
 ![image](https://github.com/user-attachments/assets/84c51c21-70ce-44cb-bbbd-f436e6c25760)
 
