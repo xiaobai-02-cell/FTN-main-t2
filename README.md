@@ -4,18 +4,11 @@
 Paper Links: [Fully Transformer Network for Change Detection of Remote Sensing Images
 ](https://openaccess.thecvf.com/content/ACCV2022/html/Yan_Fully_Transformer_Network_for_Change_Detection_of_Remote_Sensing_Images_ACCV_2022_paper.html)
 
-by [Tianyu Yan](), [Zifu Wan](), [Pingping Zhang*](https://scholar.google.com/citations?user=MfbIbuEAAAAJ&hl=zh-CN).
-
 ## Introduction
 ****
-Recently, change detection (CD) of remote sensing images have achieved great progress with the advances of deep learning. However, current methods generally deliver incomplete CD regions and irregular CD boundaries due to the limited representation ability of the extracted visual features. To relieve these issues, in this work we propose a novel learning framework named Fully Transformer Network (FTN) for remote sensing image CD, which improves the feature extraction from a global view and combines multi-level visual features in a pyramid manner. More specifically, the proposed framework first utilizes the advantages of Transformers in long-range dependency modeling. It can help to learn more discriminative global-level features and obtain complete CD regions. Then, we introduce a pyramid structure to aggregate multi-level visual features from Transformers for feature enhancement. The pyramid structure grafted with a Progressive Attention Module (PAM) can improve the feature representation ability with additional interdependencies through channel attentions. Finally, to better train the framework, we utilize the deeply-supervised learning with multiple boundaryaware loss functions. Extensive experiments demonstrate that our proposed method achieves a new state-of-the-art performance on four public CD benchmarks.
+近年来，随着深度学习的发展，遥感图像的变化检测（CD）取得了长足的进步。然而，由于提取的视觉特征的表示能力有限，目前的方法通常会提供不完整的CD区域和不规则的CD边界。为了缓解这些问题，在这项工作中，我们提出了一种名为全变换网络（FTN）的遥感图像CD学习框架，该框架改进了从全局视图中提取特征的方法，并以金字塔的方式组合了多级视觉特征。更具体地说，所提出的框架首先利用了Transformer在远程依赖建模中的优势。它可以帮助学习更具判别性的全局级特征，并获得完整的CD区域。然后，我们引入金字塔结构来聚合变形金刚的多级视觉特征，以增强特征。金字塔结构嫁接了渐进式注意力模块（PAM），可以通过通道注意力来提高特征表示能力，并增加相互依赖性。最后，为了更好地训练框架，我们利用了具有多个有界感知损失函数的深度监督学习。大量实验表明，我们提出的方法在四个公共CD基准测试中取得了最新的性能。
 
-## Update
-**** 
-
-* 03/17/2023: The code has been updated.
-
-## Requirements
+## 复现实验环境
 ****
 * python 3.5+
 * PyTorch 1.1+
@@ -24,36 +17,24 @@ Recently, change detection (CD) of remote sensing images have achieved great pro
 * tqdm
 * OpenCV
 
-## Preperations
+## 准备工作
 ****
 
-For using the codes, please download the public change detection datasets 
-(more details are provided in the paper) :
+1.下载公开检测数据集:
 * LEVIR-CD
 * WHU-CD
 * SYSU-CD
 * Google-CD
 
-The processed datasets can be downloaded at this [link](https://drive.google.com/drive/folders/1Knqdxb6g8_7NFKqeHgnp-iUEMRemGCNh?usp=share_link).
+注：因为原数据集图片大小为1024*1024，需要手动处理为224*224
 
-Then, run the following codes with your GPUs, and you can get the same results in the above paper.  
-
-
-## Usage
-****
-
-### 1. Download pre-trained Swin Transformer models
+2.下载在ImageNet22K上预训练好的SwinTransformer模型
 * [Get models in this link](https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_base_patch4_window7_224_22kto1k.pth): SwinB pre-trained on ImageNet22K 
 
 
-### 2. Prepare data
 
-* Please use *utils/split.py* to split the images to 224*224 first.
-* Use *utils/check.py* to check if the labels are binary form. Info will be printed if your label form is incorrect.
-* Use *utils/bimap.py* if the labels are not binary.
-* You may need to move the aforementioned files to corresponding places.
-
-### 3. Train/Test
+### 以WHU-CD数据集为例进行论文结果复现
+****
 
 - For training, run:
 
@@ -72,34 +53,4 @@ python test_swin.py
 - For evaluation, run:
 ```bash
 python deal_evaluation.py 
-```
-
-## Reference
-****
-
-* [Swin Transformer](https://github.com/microsoft/Swin-Transformer)
-
-## Contact
-****
-
-If you have any problems. Please concat
-
-QQ: 1580329199
-
-Email: tianyuyan2001@gmail.com or wanzifu2000@gmail.com
-
-## Citation
-****
-
-If you find our work helpful to your research, please cite with:
-
-```bibtex
-@InProceedings{Yan_2022_ACCV,
-    author    = {Yan, Tianyu and Wan, Zifu and Zhang, Pingping},
-    title     = {Fully Transformer Network for Change Detection of Remote Sensing Images},
-    booktitle = {Proceedings of the Asian Conference on Computer Vision (ACCV)},
-    month     = {December},
-    year      = {2022},
-    pages     = {1691-1708}
-}
 ```
