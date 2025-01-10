@@ -35,6 +35,7 @@ Paper Links: [Fully Transformer Network for Change Detection of Remote Sensing I
 
 ### 以WHU-CD数据集为例进行论文结果复现
 ****
+![8d114e2a7787fd707e250d19535e3a1](https://github.com/user-attachments/assets/23f7f1b2-d75f-484c-879e-94430938e394)
 
 - For training, run:
 
