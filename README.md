@@ -26,7 +26,7 @@ Paper Links: [Fully Transformer Network for Change Detection of Remote Sensing I
 * SYSU-CD
 * Google-CD
 
-注：因为原数据集图片大小为1024*1024，需要手动处理为224*224
+注：因为原数据集图片大小为1024×1024，需要手动处理为224×224
 
 2.下载在ImageNet22K上预训练好的SwinTransformer模型
 * [Get models in this link](https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_base_patch4_window7_224_22kto1k.pth): SwinB pre-trained on ImageNet22K 
