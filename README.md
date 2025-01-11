@@ -35,8 +35,12 @@ Paper Links: [Fully Transformer Network for Change Detection of Remote Sensing I
 
 ### 以WHU-CD数据集为例进行论文结果复现
 ****
-本次使用RTX3090训练耗时约10小时，实验结果如下图所示，左侧whu_swin.pth为训练好的模型参数,训练好的模型因占用内存太大未上传到github，如有需要请联系我  
-下方控制台输出为实验结果：
+本次使用RTX3090训练耗时约10小时
+训练过程如下图：
+![Snipaste_2025-01-10_22-59-52](https://github.com/user-attachments/assets/8ead64e6-ff56-42ea-8cc5-9aa20822e0fc)
+
+实验结果如下图所示，左侧whu_swin.pth为训练好的模型参数,训练好的模型因占用内存太大未上传到github，如有需要请联系我  
+下方控制台输出为测试实验结果：
 ![Snipaste_2025-01-10_11-03-44](https://github.com/user-attachments/assets/3375138a-c4e7-4a53-9458-d0f51a79b66d)
 
 原论文实验结果如下，可以发现复现结果与原论文结果几乎一致
