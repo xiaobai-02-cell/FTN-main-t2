@@ -16,7 +16,6 @@ import pytorch_ssim
 
 deal = nn.Softmax(dim=1)
 
-
 def all_loss(pred, gt):
     ce_loss = nn.CrossEntropyLoss()
     ssim_loss = pytorch_ssim.SSIM(window_size=11, size_average=True).cuda()

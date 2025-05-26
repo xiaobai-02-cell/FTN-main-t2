@@ -3,7 +3,6 @@ from torchvision import transforms
 from PIL import Image
 import os
 
-
 class MyData(Dataset):
     def __init__(self):
         super(MyData, self).__init__()

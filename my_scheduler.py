@@ -1,6 +1,5 @@
 import math
 
-
 class LR_Scheduler(object):
     """Learning Rate Scheduler
 
