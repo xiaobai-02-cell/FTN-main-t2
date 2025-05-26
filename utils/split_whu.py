@@ -11,7 +11,6 @@ if os.path.exists(outpath):
     shutil.rmtree(outpath)
 os.mkdir(outpath)
 
-
 def split(img, img_name):
     print(img_name)
     size = img.shape

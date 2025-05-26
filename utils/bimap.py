@@ -2,7 +2,6 @@ import cv2
 import numpy as np
 import os
 import shutil
-
 # if the masks are incorrect, then use cv2.threshold to process the images
 refile = '../label'
 outPath = '../label_deal'

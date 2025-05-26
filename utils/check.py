@@ -5,7 +5,6 @@ Files_path = r"../try"
 labels_num = len(os.listdir(Files_path))
 print(labels_num)
 import numpy as np
-
 # check if the masks are correct
 for i in range(labels_num):
     image_dir = os.path.join(Files_path, str(os.listdir(Files_path)[i]))
