@@ -19,7 +19,7 @@ def _iou(pred, target, size_average = True):
         IoU = IoU + (1-IoU1)
 
     return IoU/b
-
+###
 class IOU(torch.nn.Module):
     def __init__(self, size_average = True):
         super(IOU, self).__init__()

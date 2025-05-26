@@ -2,7 +2,6 @@ import cv2
 import numpy as np
 import os
 import shutil
-
 refile = 'levir_swin'  # file obtained by test_swin.py
 outPath = 'levir_swin_deal'  # temp file
 if os.path.exists(outPath):
