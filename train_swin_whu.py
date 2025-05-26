@@ -162,4 +162,3 @@ for epoch_num in range(EPOCH):
         loss_least = loss_all
         torch.save(model.state_dict(), 'whu_swin.pth')
         print('\n', 'epoch:', epoch_num, 'epoch loss:', loss_all)
-
